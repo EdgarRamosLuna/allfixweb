@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html,body{
+  overflow-x:hidden;
+}
+@font-face {
+  font-family: 'Black';
+  src:url('../public/assets/fonts/BarlowCondensed-Black.ttf');
+}
+@font-face {
+  font-family: 'Bold';
+  src:url('../public/assets/fonts/BarlowCondensed-Bold.ttf');
+}
+@font-face {
+  font-family: 'ExtraBold';
+  src:url('../public/assets/fonts/BarlowCondensed-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'ExtraLight';
+  src:url('../public/assets/fonts/BarlowCondensed-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'Italic';
+  src:url('../public/assets/fonts/BarlowCondensed-Italic.ttf');
+}
+@font-face {
+  font-family: 'Light';
+  src:url('../public/assets/fonts/BarlowCondensed-Light.ttf');
+}
+@font-face {
+  font-family: 'Medium';
+  src:url('../public/assets/fonts/BarlowCondensed-Medium.ttf');
+}
+@font-face {
+  font-family: 'Regular';
+  src:url('../public/assets/fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face {
+  font-family: 'Thin';
+  src:url('../public/assets/fonts/BarlowCondensed-Thin.ttf');
+}
+@font-face {
+  font-family: 'SemiBold';
+  src:url('../public/assets/fonts/BarlowCondensed-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'H-Black';
+  src:url('../public/assets/fonts/Heebo-Black.ttf');
+}
+
+@font-face {
+  font-family: 'H-Bold';
+  src:url('../public/assets/fonts/Heebo-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'H-ExtraBold';
+  src:url('../public/assets/fonts/Heebo-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'H-Light';
+  src:url('../public/assets/fonts/Heebo-Light.ttf');
+}
+
+@font-face {
+  font-family: 'H-Medium';
+  src:url('../public/assets/fonts/Heebo-Medium.ttf');
+}
+@font-face {
+  font-family: 'H-Regular';
+  src:url('../public/assets/fonts/Heebo-Regular.ttf');
+}
