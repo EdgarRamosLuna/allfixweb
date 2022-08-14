@@ -212,6 +212,22 @@ export const HeaderS = styled.div`
         }
         h2 {
             font-size: 60px;
+            z-index: 7;
+            span{
+                position: relative;
+                &:after{
+                    content:'';
+                    position:absolute ;
+                    width: 98%;
+                    height: 15px;
+                    border-radius: 5px;
+                    background: #cb480b;
+                    left: 0;
+                    bottom: 10px;
+                    z-index: -1;
+
+                }
+            }
         }
         p {
             font-size: 25px;
@@ -356,8 +372,99 @@ position: relative;
 export const Section2S = styled.div`
 width: 100%;
 position: relative;
+background:url(/assets/img/service-bg-min.jpg);
+background-repeat:no-repeat ;
+background-position:center bottom;
+padding:3rem 0;
+.s-content {
+  display: flex;
+  flex-direction: column;
+}
+.s-content-txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 1.69em;
+}
+.s-content-items {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
 
-
+.s-content-item {
+  width: calc(33.33% - 30px);
+  display: flex;
+  background: #fff;
+  margin: 0 15px;
+  justify-content: center;
+  align-items: center;
+  min-height: 495px;
+  transition:all 0.3s;
+  cursor: pointer;
+  &:hover{
+    transition:all 0.3s;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    .s-content-item-ico{
+        background: #fe5a0e;
+        transition:all 0.3s;
+        scale:1.1;
+        img {
+            filter: contrast(0) grayscale(100%) brightness(100);
+        }
+    }
+   
+  }
+}
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+.s-content-item-ico {
+    display: flex;
+    align-self: start;
+    background: #f6f6f6;
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s;
+    img {
+        width: 50%;
+    }
+}
+.s-content-t-s{
+    
+    h2{
+        
+        font-size: 50px;
+        margin: 0 0 0.69em;
+        line-height: 1.19em;
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        font-weight: 700;
+        color: #262b3e;
+        font-family: "Bold";
+    }
+    h4{
+        display: inline-block;
+        padding: 0 40px;
+        margin-bottom: 20px;
+        font-size: 19px;
+        font-weight: 600;
+        color: #fe5a0e;
+        margin-top: -0.3em;
+        position: relative;
+        font-family: "Regular";
+        
+    }
+}
 `;
 export const Section3S = styled.div`
 width: 100%;
