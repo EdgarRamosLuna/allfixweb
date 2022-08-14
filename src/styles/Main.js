@@ -323,6 +323,12 @@ position: relative;
   flex-direction:column;
   
 }
+.title-s {
+  width: 100%;
+}
+.title-l {
+  width: 100%;
+}
 .title-l h3 {
   font-size: 50px;
   line-height: 1.19em;
