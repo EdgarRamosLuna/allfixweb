@@ -10,12 +10,10 @@ export default function Header(){
                     </div>
                     <div className="menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Portafolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">AllFix</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Contacto</a></li>
                         </ul>
                     </div>
             </div>
@@ -23,11 +21,11 @@ export default function Header(){
                 <div className="slider-content">
                     <div className="s-item-container">
                         <div className="s-item-c-txt">
-                            <h2>We are experienced and <span>expert industry</span> company.</h2>   
-                            <p>We provide the best factory services.</p> 
+                            <h2>Somos una <span>empresa Experimentada</span> y Experta en la industria.</h2>   
+                            <p>Brindamos los mejores servicios.</p> 
                         </div>
                         <div className="s-item-c-btn">
-                            <button>Our Services <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                            <button>Servicios <span><i class="fa-solid fa-arrow-right"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -38,8 +36,8 @@ export default function Header(){
                                 <i class="fa-solid fa-phone"></i>
                             </div>    
                             <div className="s-item-txt">
-                                <h3>Call Us:</h3>
-                                <p>+00 823 468 739</p>
+                                <h3>Llamanos:</h3>
+                                <p><a href="tel:52-842-113-0900" style={{color:'#fff', textDecoration:'none'}}>+52 842 113 0900</a></p>
                             </div>    
                         </div>
                     </div>
@@ -49,8 +47,8 @@ export default function Header(){
                                 <i class="fa-regular fa-envelope"></i>
                             </div>    
                             <div className="s-item-txt">
-                                <h3>Email Us:</h3>
-                                <p>allfix@gmail.com</p>
+                                <h3>Contactanos:</h3>
+                                <p><a href="mailto:allfixparras@gmail.com" style={{color:'#000', textDecoration:'none'}}>allfixparras@gmail.com</a> </p>
                             </div>    
                         </div>
                     </div>
