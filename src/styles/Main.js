@@ -397,7 +397,7 @@ export const Section2S = styled.div`
     flex-wrap: wrap;
   }
   .s-content-item-txt{
-    width: 70%;
+    width: 50%;
   }
   .s-content-item {
     width: calc(49.33% - 30px);
