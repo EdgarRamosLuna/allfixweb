@@ -1,9 +1,11 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import { HeaderS } from '../styles/Main'
 
 export default function Header(){
     return(
         <HeaderS>
+            
             <div className="header-cont">
                     <div className="logo">
                         <a href="#"><img src="/assets/img/logo.png" alt="" /></a>
@@ -11,9 +13,9 @@ export default function Header(){
                     <div className="menu">
                         <ul>
                             <li><a href="#">Inicio</a></li>
-                            <li><a href="#">AllFix</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><HashLink smooth   to={{pathname: "/", hash: "#allfix"}} >AllFix</HashLink ></li>
+                            <li><HashLink smooth   to={{pathname: "/", hash: "#servicios"}} >Servicios</HashLink ></li>
+                            <li><HashLink smooth   to={{pathname: "/", hash: "#contacto"}} >Contacto</HashLink ></li>
                         </ul>
                     </div>
             </div>
@@ -25,7 +27,7 @@ export default function Header(){
                             <p>Brindamos los mejores servicios.</p> 
                         </div>
                         <div className="s-item-c-btn">
-                            <button>Servicios <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        <HashLink smooth   to={{pathname: "/", hash: "#contacto"}} className="a-btn"><button>Servicios <span><i class="fa-solid fa-arrow-right"></i></span></button></HashLink >
                         </div>
                     </div>
                 </div>
@@ -54,6 +56,7 @@ export default function Header(){
                     </div>
                 </div>
             </div>
+            <div id="allfix"></div>
         </HeaderS>
     )
 }

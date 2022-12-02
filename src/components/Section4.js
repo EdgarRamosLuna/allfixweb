@@ -4,7 +4,7 @@ import SimpleMap from './helpers/Map'
 
 export default function Section4(){
     return(
-        <ContactoS>
+        <ContactoS id="contacto">
             <div className='container-1'>
                 <div className='txt1'>
                         Contactanos

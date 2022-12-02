@@ -234,6 +234,9 @@ export const HeaderS = styled.div`
       font-family: "H-Bold";
     }
   }
+  .a-btn {
+    text-decoration: none;
+    }
   .s-item-c-btn {
     width: 100%;
     button {

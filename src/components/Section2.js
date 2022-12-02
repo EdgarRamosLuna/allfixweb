@@ -29,7 +29,7 @@ const data4 = [
 
 export default function Section2() {
   return (
-    <Section2S>
+    <Section2S id="servicios">
       <div className="s-content">
         <div className="s-content-txt">
           <div className="s-content-t-s">
