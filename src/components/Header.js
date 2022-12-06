@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Outlet } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import { MainContext } from '../context/MainContext'
 import { HeaderS } from '../styles/Main'
+import Footer from './Footer'
+import Gallery from './helpers/Gallery'
 
 export default function Header(){
+    const {
+        service, setService,
+        showService, setShow,
+        show
+    } = useContext(MainContext);
     return(
+        <>
+        {show == true ? <Gallery id={service} /> : "" }
+        
         <HeaderS>
             
             <div className="header-cont">
@@ -58,5 +70,10 @@ export default function Header(){
             </div>
             <div id="allfix"></div>
         </HeaderS>
+        <Outlet/>
+        <Footer />
+        </>
+
+        
     )
 }

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { MainContext } from "../context/MainContext";
 import { Section2S } from "../styles/Main";
 import List from "./List";
 
@@ -28,6 +29,7 @@ const data4 = [
 ];
 
 export default function Section2() {
+ const {showService} = useContext(MainContext);
   return (
     <Section2S id="servicios">
       <div className="s-content">
@@ -50,6 +52,9 @@ export default function Section2() {
             <div className="s-content-item-txt">
               <List data={data1} />
             </div>
+            <div className="s-contente-btn" onClick={(e)=> showService(e, 1)}>
+              <i class="fa-solid fa-eye"></i>
+            </div>
           </div>
           <div className="s-content-item">
             <div className="s-content-item-ico">
@@ -60,6 +65,9 @@ export default function Section2() {
             </div>
             <div className="s-content-item-txt">
               <List data={data2} />
+            </div>
+            <div className="s-contente-btn" onClick={(e)=> showService(e, 2)}>
+              <i class="fa-solid fa-eye"></i>
             </div>
           </div>
           <div className="s-content-item">
@@ -72,6 +80,9 @@ export default function Section2() {
             <div className="s-content-item-txt">
               <List data={data3} />
             </div>
+            <div className="s-contente-btn" onClick={(e)=> showService(e, 3)}>
+              <i class="fa-solid fa-eye"></i>
+            </div>
           </div>
           <div className="s-content-item">
             <div className="s-content-item-ico">
@@ -82,6 +93,9 @@ export default function Section2() {
             </div>
             <div className="s-content-item-txt">
               <List data={data4} />
+            </div>
+            <div className="s-contente-btn" onClick={(e)=> showService(e, 4)}>
+              <i class="fa-solid fa-eye"></i>
             </div>
           </div>
         </div>

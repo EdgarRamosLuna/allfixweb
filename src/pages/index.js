@@ -10,12 +10,12 @@ import { Section3S } from '../styles/Main';
 export default function Index(){
     return(
         <>
-            <Header />
+          
             <WppBtn />
             <Section1 />
             <Section2 />
             <Section4 />
-            <Footer />
+          
         </>
     )
 }

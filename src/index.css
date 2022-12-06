@@ -83,3 +83,7 @@ html,body{
   font-family: 'H-Regular';
   src:url('../public/assets/fonts/Heebo-Regular.ttf');
 }
+a{
+  text-decoration: none;
+  
+}

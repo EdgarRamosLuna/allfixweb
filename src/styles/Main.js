@@ -236,7 +236,7 @@ export const HeaderS = styled.div`
   }
   .a-btn {
     text-decoration: none;
-    }
+  }
   .s-item-c-btn {
     width: 100%;
     button {
@@ -399,7 +399,7 @@ export const Section2S = styled.div`
     width: 100%;
     flex-wrap: wrap;
   }
-  .s-content-item-txt{
+  .s-content-item-txt {
     width: 50%;
   }
   .s-content-item {
@@ -413,7 +413,9 @@ export const Section2S = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    margin-bottom: 40px;
     &:hover {
       transition: all 0.3s;
       box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
@@ -481,6 +483,19 @@ export const Section2S = styled.div`
       position: relative;
       font-family: "Regular";
     }
+  }
+  .s-contente-btn {
+    position: absolute;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    background: #fe5a0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
   }
 `;
 export const Section3S = styled.div`
@@ -577,8 +592,8 @@ export const ContactoS = styled.div`
   margin: 100px 0;
   margin-bottom: 0;
   gap: 25px;
-  flex-wrap:wrap;
-  .map{
+  flex-wrap: wrap;
+  .map {
     width: 100%;
   }
   .container-1 {
@@ -714,10 +729,9 @@ export const ContactoS = styled.div`
 `;
 
 export const FooterS = styled.div`
-width: 100%;
-display: flex;
-.icons-container {
-
+  width: 100%;
+  display: flex;
+  .icons-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -729,51 +743,115 @@ display: flex;
     box-sizing: border-box;
     gap: 15px;
     * {
-    color: #fff;
+      color: #fff;
     }
     a {
-    font-size: 1.5em;
-    transition: all 0.3s;
-    &:hover{
+      font-size: 1.5em;
+      transition: all 0.3s;
+      &:hover {
         transition: all 0.3s;
         color: #d9d8d8;
+      }
     }
-    }
-
-}
-.txt-icos {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.img-icos {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
+  }
+  .txt-icos {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .img-icos {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 export const WButton = styled.div`
-position: fixed;
-z-index: 99;
-left: 15px;
-bottom: 36px;
-font-size: 2em;
-background: rgb(103, 201, 89);
-display: flex;
--moz-box-pack: center;
-justify-content: center;
--moz-box-align: center;
-align-items: center;
-border-radius: 100%;
-width: 50px;
-height: 50px;
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
+  position: fixed;
+  z-index: 99;
+  left: 15px;
+  bottom: 36px;
+  font-size: 2em;
+  background: rgb(103, 201, 89);
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+`;
+
+export const GalleryS = styled.div`
+  position: fixed;
+  z-index: 999;
+  background: #0000004d;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    height: 80%;
+    overflow-y: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .close-btn {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #fe5a0e;
+    cursor: pointer;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fe5a0e;
+    text-align: center;
+  }
+  .title h1 {
+    border-bottom: 2px solid;
+  }
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-item {
+    width: auto;
+    min-width: 31.33%;
+    max-height: 380px;
+    max-width: 31.33%;
+    margin: 10px auto;
+    transition: box-shadow 0.2s ease-in-out 0s, box-shadow 0.2s ease-in-out 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    border: 1px solid #fe5a0e;
+    box-sizing: border-box;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .img img {
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+  }
 `;
