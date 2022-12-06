@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { MainContext } from '../../context/MainContext';
 import { GalleryS } from '../../styles/Main';
+import Loading from './Loading';
 const imagesList1 = [
     {
         title: 'Servicios eléctricos'
@@ -103,7 +104,7 @@ const Gallery = (props) => {
   const params = useParams();
   //let id = parseInt(params.num);
   console.log(id);
-  const {hideService} = useContext(MainContext);
+  const {hideService, show} = useContext(MainContext);
   const [data, setData] = useState([]);
   const [showData, setShowData] = useState(false);
   useEffect(() => {
@@ -119,8 +120,36 @@ const Gallery = (props) => {
     if(id === 4){
         setData(imagesList4);
     }
-    setShowData(true);
+
   }, []);
+  const listaData = data.map((imgs, i) =>{
+    return (
+                                
+        i === 0 ? "":
+            <div className='img-item'>
+                <div className='img'>
+                    <img src={imgs.img} alt="" />
+                
+                </div>
+            </div>
+        
+    
+    )
+  });
+  function getBooks() {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(
+    
+      ), 1000);
+    });
+  }
+  useEffect(() => {
+    
+    getBooks().then(books => {
+        setShowData(true);
+    });
+  }, [])
+  
   return (
     <GalleryS>
         <div className='container'>
@@ -131,24 +160,9 @@ const Gallery = (props) => {
             <div className='img-container'>
                 
                 {
-                    showData == true ? (
-                        data.map((imgs, i) =>{
-                            return (
-                                
-                                i === 0 ? "":
-                                    <div className='img-item'>
-                                        <div className='img'>
-                                            <img src={imgs.img} alt="" />
-                                        
-                                        </div>
-                                    </div>
-                                
-                            
-                            )
-                        })
-                    ) : ""
+                    showData === true ? listaData : <Loading />
+                   
                 }
-                
                 
             </div>
 

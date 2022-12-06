@@ -855,3 +855,10 @@ export const GalleryS = styled.div`
     width: 100%;
   }
 `;
+
+export const LoadingS = styled.div`
+width: 100%;
+text-align: center;
+
+
+`;
