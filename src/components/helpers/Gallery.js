@@ -128,7 +128,7 @@ const Gallery = (props) => {
         i === 0 ? "":
             <div className='img-item'>
                 <div className='img'>
-                    <img src={imgs.img} alt="" />
+                    <img src={imgs.img} alt="" width={350} height={350} />
                 
                 </div>
             </div>
